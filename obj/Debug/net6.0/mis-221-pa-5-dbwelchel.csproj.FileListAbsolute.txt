@@ -1,0 +1,15 @@
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.csproj.AssemblyReference.cache
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.AssemblyInfoInputs.cache
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.AssemblyInfo.cs
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.csproj.CoreCompileInputs.cache
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\bin\Debug\net6.0\mis-221-pa-5-dbwelchel.exe
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\bin\Debug\net6.0\mis-221-pa-5-dbwelchel.deps.json
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\bin\Debug\net6.0\mis-221-pa-5-dbwelchel.runtimeconfig.json
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\bin\Debug\net6.0\mis-221-pa-5-dbwelchel.dll
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\bin\Debug\net6.0\mis-221-pa-5-dbwelchel.pdb
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.dll
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\refint\mis-221-pa-5-dbwelchel.dll
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.pdb
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\mis-221-pa-5-dbwelchel.genruntimeconfig.cache
+C:\Users\dylan\OneDrive\Desktop\Schoolwork\MIS 221\Programming\mis-221-pa-5-dbwelchel\obj\Debug\net6.0\ref\mis-221-pa-5-dbwelchel.dll
