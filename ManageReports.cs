@@ -93,17 +93,17 @@ namespace mis_221_pa_5_dbwelchel
 
         public void Save() {
                  
-                        Reports.GetCount();
-                        StreamWriter outFile = new StreamWriter("ReportsInfo.txt", true);
+            Reports.GetCount();
+            StreamWriter outFile = new StreamWriter("ReportsInfo.txt", true);
                         
-                            for(int i = 0; i < Reports.GetCount(); i++) {
-                            if(report[i]!= null) {
-                                outFile.WriteLine(report[i].GetSessionID()+ "#" + report[i].GetCustName() + "#" + report[i].GetCustEmail() + "#"+ report[i].GetTrainDate() +"#" + report[i].GetTrainerID() +"#" +report[i].GetTrainerName() +"#" +report[i].GetBooking());
+            for(int i = 0; i < Reports.GetCount(); i++) {
+                if(report[i]!= null) {
+                    outFile.WriteLine(report[i].GetSessionID()+ "#" + report[i].GetCustName() + "#" + report[i].GetCustEmail() + "#"+ report[i].GetTrainDate() +"#" + report[i].GetTrainerID() +"#" +report[i].GetTrainerName() +"#" +report[i].GetBooking());
                             
-                            }
+                }
                         
-                    }
-                    outFile.Close(); 
+            }
+            outFile.Close(); 
         }
          
     }
