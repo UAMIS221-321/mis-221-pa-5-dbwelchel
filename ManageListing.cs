@@ -8,6 +8,7 @@ namespace mis_221_pa_5_dbwelchel
             this.listing = listing;
             
         }
+        //adds a listing
            public void AddListing() {
             Listings.SetCount(0);
         
@@ -53,7 +54,7 @@ namespace mis_221_pa_5_dbwelchel
             }
             Save();
            }
-        
+        //edits a listing
           public void EditListing() {
                 
                 
@@ -96,7 +97,7 @@ namespace mis_221_pa_5_dbwelchel
                        
                }   
                
-
+//deletes a listing
 public void DeleteListing() {
     System.Console.WriteLine("Please enter ID of the session you want to delete");
             int searchVal = int.Parse(Console.ReadLine());
@@ -115,7 +116,7 @@ public void DeleteListing() {
         }
 
 
-
+//Save to streamwriter
         public void Save() {
             Listings.GetCount();
             StreamWriter outFile = new StreamWriter("ListingInfo.txt", true);
@@ -126,7 +127,7 @@ public void DeleteListing() {
             }
             outFile.Close();
         }
-         
+         //updates to Streamwriter
          public void Update() {
             Listings.GetCount();
             StreamWriter outFile = new StreamWriter("ListingInfo.txt", false);
@@ -138,7 +139,7 @@ public void DeleteListing() {
             outFile.Close();
             }  
 
-
+//Gets listings from txt.file
         public void GetAllListingsFromFile() {
             int i = 0;
             StreamReader inFile = new StreamReader("ListingInfo.txt");
@@ -154,7 +155,7 @@ public void DeleteListing() {
             inFile.Close();
         }
 
-    
+    //Looks for Listing ID
         static int Find(string userInput, Listings[] listing) {
             for(int i = 0; i < listing.Length; i++) {
                 if(listing[i] != null && listing[i].GetListID().ToString() == userInput) {
@@ -164,6 +165,7 @@ public void DeleteListing() {
             }
             return -1;
         }
+        //Looks for ID to Delete
         static int DeleteFind(int searchVal, Listings[] listing) {
             for(int i = 0; i < listing.Length; i++) {
                 if(listing[i] != null && listing[i].GetListID() == searchVal) {
@@ -173,7 +175,7 @@ public void DeleteListing() {
             }
             return -1;
         }
- 
+ //Prints All Sessions
         public void PrintAllListings() {
             int i = 0;
             Console.WriteLine("Available Sessions");
@@ -185,6 +187,7 @@ public void DeleteListing() {
                 }   
          
             }
+            //Prints all sessions NOT BOOKED
             public void PrintNotBookedListings() {
             int i = 0;
             Console.WriteLine("Available Sessions");

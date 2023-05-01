@@ -1,7 +1,7 @@
 namespace mis_221_pa_5_dbwelchel
 {
     public class Trainer
-    {
+    {   //instances
         private int identification;
         private string name;
         private string address;
@@ -15,7 +15,7 @@ namespace mis_221_pa_5_dbwelchel
             this.address = address;
             this.email = email;
         }
-
+    //accessors and mutators
         public void SetID(int identification) {
             this.identification = identification;
         }

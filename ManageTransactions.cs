@@ -10,7 +10,7 @@ namespace mis_221_pa_5_dbwelchel
             this.transaction = transaction;
             this.listing = listing;
         }
-
+        //Allows customer to book session
         public void BookSession() {
             Transactions.SetCount(0);
             System.Console.WriteLine("To book, please select a Session ID or enter STOP to STOP");
@@ -64,6 +64,8 @@ namespace mis_221_pa_5_dbwelchel
             Save();
             }
         }   
+
+        //Searches and returns listing ID location
         static int Find(int selectID, Listings[] listing) {
             for(int i = 0; i < listing.Length; i++) {
                 if(listing[i] != null && listing[i].GetListID() == selectID) {
@@ -72,7 +74,7 @@ namespace mis_221_pa_5_dbwelchel
             }
             return -1;
         }
-    
+    //Searches and returns trainer name location
         public int FindTrainer(Trainer[] trainers, Listings[] listing,int foundIndex) {
             int i = 0;
             string name = listing[foundIndex].GettName();
@@ -87,7 +89,7 @@ namespace mis_221_pa_5_dbwelchel
             return -1;
         }
     
-
+//updates Listing.Txt if a booking is made
         public void UpdateBooking(Listings[] listing, int foundIndex, int sessionID) {
             if(listing[foundIndex].GetAvailability() == "NOT BOOKED" && listing[foundIndex].GetListID().ToString() == sessionID.ToString()) {
                 listing[foundIndex].SetAvailability("BOOKED");
@@ -95,7 +97,7 @@ namespace mis_221_pa_5_dbwelchel
             }
         }
  
-
+//Saves to Booking Transaction file
         public void Save() {
             StreamWriter outFile = new StreamWriter("TransactionInfo.txt", true);
             for(int i = 0; i < transaction.Length; i++) {
@@ -106,7 +108,7 @@ namespace mis_221_pa_5_dbwelchel
             outFile.Close();
         }     
             
-            
+            //Saves Booked to the Listing file
             public void SaveBooked(Listings[] listing) {
                 StreamWriter outFile = new StreamWriter("ListingInfo.txt", false);
                 for(int i = 0; i < Listings.GetCount(); i++) {
@@ -116,7 +118,7 @@ namespace mis_221_pa_5_dbwelchel
                 }
                 outFile.Close();
             }  
-        
+        //Updates a session to Complete or Cancel
         public void UpdateSession(){
             System.Console.WriteLine("Which would Session ID would you like to update? Or you can enter Stop to STOP");
             string input = Console.ReadLine().ToUpper();
@@ -161,7 +163,7 @@ namespace mis_221_pa_5_dbwelchel
                 }
             
         
-    
+    // Searches for and returns location for UpdateSession
     public int FindUpdateID(int selectID, Transactions[] transaction) {
             string testID = selectID.ToString();
             for(int i = 0; i < transaction.Length; i++) {
@@ -171,6 +173,7 @@ namespace mis_221_pa_5_dbwelchel
             }
             return -1;
         }
+       //Prints all Booked sessions
        public void PrintBookedSessions() {
             
             Console.WriteLine("Sessions currently booked");
@@ -184,7 +187,7 @@ namespace mis_221_pa_5_dbwelchel
                 }   
                 }
             
-        
+        //updates the booked in transaction file to complete or cancelled
         public void Update() {
             Transactions.GetCount();
             StreamWriter outFile = new StreamWriter("TransactionInfo.txt", false);
@@ -195,7 +198,7 @@ namespace mis_221_pa_5_dbwelchel
             }
             outFile.Close();
             }  
-
+// gets all Booksing from transactions file
         public void GetAllBookingsFromFile() {
             Console.WriteLine("test");
             int i = 0;

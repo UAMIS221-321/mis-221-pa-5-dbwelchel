@@ -40,7 +40,7 @@ static int MainMenu() {
     }
     return getChoice;
 }
-
+//Make a menu selection 
 static void MenuRoute(int letsRoute, Trainer[] trainers, ManageTrainer selectTrainer, Listings[] listing, ManageListing selectListing, Transactions[] transaction, ManageTransactions selectTransaction, Reports[] report, ManageReports selectReport) {
     bool intCheck = true; 
     while(intCheck) {
@@ -126,7 +126,7 @@ static void MenuRoute(int letsRoute, Trainer[] trainers, ManageTrainer selectTra
         letsRoute = MainMenu();
     }
 }
-
+//Trainer menu
 static void TrainerMenu(int trainerChoice, Trainer[] trainers, ManageTrainer selectTrainer, Listings[] listing, ManageListing selectListing, int letsRoute) {
     while(trainerChoice != 4) {
         if(trainerChoice == 1) {
@@ -156,7 +156,7 @@ static void TrainerMenu(int trainerChoice, Trainer[] trainers, ManageTrainer sel
 }
     
 
-
+//Listing menu
 static void ListingMenu(int listingChoice,Trainer[] trainers, ManageTrainer selectTrainer, Listings[] listing, ManageListing selectListing, int letsRoute) {
     while(listingChoice != 4) {
     if(listingChoice == 1) {
@@ -182,7 +182,7 @@ static void ListingMenu(int listingChoice,Trainer[] trainers, ManageTrainer sele
     }
     }
 }
-        
+//Booking Menu 
 static void BookingMenu(int bookingChoice, Trainer[] trainers, ManageTrainer selectTrainer, Listings[] listing, ManageListing selectListing, int letsRoute, Transactions[] transaction, ManageTransactions selectTransaction) {
     if(bookingChoice == 1) {
         selectTrainer.GetAllTrainersFromFile();
@@ -206,7 +206,7 @@ static void BookingMenu(int bookingChoice, Trainer[] trainers, ManageTrainer sel
         letsRoute = MainMenu();
     }
 }
-
+//Report Menu
 static void ReportMenu(int reportChoice, Trainer[] trainers, ManageTrainer selectTrainer, Listings[] listing, ManageListing selectListing, int letsRoute, Transactions[] transaction, ManageTransactions selectTransaction, Reports[] report, ManageReports selectReport) {
     if(reportChoice == 1) {
     selectReport.GetAllTransactionsFromFile();

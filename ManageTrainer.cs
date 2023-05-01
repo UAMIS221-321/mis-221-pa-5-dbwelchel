@@ -6,7 +6,7 @@ namespace mis_221_pa_5_dbwelchel
         public ManageTrainer(Trainer[] trainers) {
             this.trainers = trainers;
         }
-        
+        //adds a trainer
         public void AddTrainers() {
             Trainer.SetCount(0);
             System.Console.WriteLine("Please enter ID. Enter stop to STOP");
@@ -46,7 +46,7 @@ namespace mis_221_pa_5_dbwelchel
             Save();
         }
             
-            // edit feature
+            // edit features of trainer
             public void EditTrainers() {
                 // Reports report = new Reports(trainers);
                 // report.GetAllTrainersFromFile();
@@ -76,7 +76,7 @@ namespace mis_221_pa_5_dbwelchel
                     }
                        
                }   
-           
+           //delete a trainer
               public void DeleteTrainer()
         {
             System.Console.WriteLine("Please enter ID of the trainer you want to delete");
@@ -97,7 +97,7 @@ namespace mis_221_pa_5_dbwelchel
      
             
 
-         
+         // save to streamwriter
   public void Save() {
             Trainer.GetCount();
             StreamWriter outFile = new StreamWriter("TrainerInfo.txt", true);
@@ -108,7 +108,7 @@ namespace mis_221_pa_5_dbwelchel
             }
             outFile.Close();
             }  
-
+//update streamwriter
  public void Update() {
             Trainer.GetCount();
             StreamWriter outFile = new StreamWriter("TrainerInfo.txt", false);
@@ -120,7 +120,7 @@ namespace mis_221_pa_5_dbwelchel
             outFile.Close();
             }  
 
-
+//Pulls from txt.file
              public void GetAllTrainersFromFile() {
                 StreamReader inFile = new StreamReader("TrainerInfo.txt");
                 int i = 0;
@@ -137,7 +137,7 @@ namespace mis_221_pa_5_dbwelchel
             
             inFile.Close();
         }
-  
+ //Looks for ID 
 static int Find(int searchVal, Trainer[] trainers) {
     
     for(int i = 0; i < trainers.Length; i++) {
@@ -148,7 +148,7 @@ static int Find(int searchVal, Trainer[] trainers) {
     }
     return -1;
 }
-  
+  //Prints all trainers
  public void PrintAllTrainers() {
             Console.ReadKey();
             Console.WriteLine("Available Trainers");

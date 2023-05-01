@@ -1,7 +1,7 @@
 namespace mis_221_pa_5_dbwelchel
 {
     public class Listings
-    {
+    {   //instances
         private int listID;
         private string tName;
         private string date;
@@ -10,7 +10,7 @@ namespace mis_221_pa_5_dbwelchel
         private string availability;
         static private int count;
         
-        // private Trainer[] trainers;
+        // constructor
         public Listings(int listID, string tName, string date, string time, int cost, string availability) {
             // this.trainers = trainers;
             this.listID = listID;
@@ -20,7 +20,7 @@ namespace mis_221_pa_5_dbwelchel
             this.cost = cost;
             this.availability = availability;
         }
-
+        //accessors and mutators
         public void SetListID(int listID) {
             this.listID = listID;
         }
